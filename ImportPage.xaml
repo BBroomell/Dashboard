@@ -1,0 +1,22 @@
+﻿<Page x:Class="Dashboard.ImportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboard"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ImportPage">
+
+    <Canvas x:Name="createCanvas">
+
+        <Grid Height="{Binding ActualHeight, ElementName=createCanvas}"  Width="{Binding ActualWidth, ElementName=createCanvas}">
+
+            <Label x:Name="LogInTitle" Content="Choose a file." HorizontalAlignment="Center" Margin="272,118,293,294" VerticalAlignment="Center" Width="235" HorizontalContentAlignment="Center" FontSize="20" Height="38"/>
+            <Button Click="openfile_Click" Content="Import File" HorizontalAlignment="Center" Margin="272,185,293,235" VerticalAlignment="Center" Width="235" Height="30" Style="{StaticResource buttonStyle}"/>
+            <Button Click="gotoDashboard_Click" Content="Continue" HorizontalAlignment="Center" Margin="272,248,293,172" VerticalAlignment="Center" Width="235" Height="30" Style="{StaticResource buttonStyle}"/>
+        </Grid>
+
+
+    </Canvas>
+</Page>
